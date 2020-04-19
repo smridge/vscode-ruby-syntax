@@ -1,8 +1,13 @@
 {
   "name": "vscode-ruby-syntax",
-  "displayName": "vscode_ruby_syntax",
-  "description": "Extends Ruby Language Grammar",
+  "displayName": "Ruby Syntax Highlighting",
+  "description": "Adds Ruby, ERB and Gemfile Language Grammars.",
+  "publisher": "SarahRidge",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smridge/vscode-ruby-syntax"
+  },
   "engines": {
     "vscode": "^1.44.0"
   },
@@ -10,16 +15,133 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "ruby",
-      "aliases": ["ruby", "ruby"],
-      "extensions": [".rb"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "ruby",
-      "scopeName": "source.ruby",
-      "path": "./syntaxes/ruby.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "erb",
+        "aliases": ["erb", "Encapsulated Ruby"],
+        "extensions": [".erb", ".rhtml", ".rhtm", "html.erb"],
+        "configuration": "./language-configuration-erb.json"
+      },
+      {
+        "id": "gemfile",
+        "aliases": [
+          "Gemfile",
+          "Bundler",
+          "bundler"
+        ],
+        "filenames": [
+          "Gemfile"
+        ],
+        "configuration": "./language-configuration-ruby.json"
+      },
+      {
+        "id": "ruby",
+        "aliases": ["ruby", "Ruby"],
+        "extensions": [
+          ".arb",
+          ".builder",
+          ".cgi",
+          ".fcgi",
+          ".gemspec",
+          ".god",
+          ".irbrc",
+          ".jbuilder",
+          ".mspec",
+          ".pluginspec",
+          ".podspec",
+          ".prawn",
+          ".pryrc",
+          ".rabl",
+          ".rake",
+          ".rb",
+          ".rbuild",
+          ".rbw",
+          ".rbx",
+          ".rjs",
+          ".ru",
+          ".ruby",
+          ".spec",
+          ".thor",
+          ".watchr"
+        ],
+        "filenames": [
+          "Appfile",
+          "Appraisals",
+          "Berksfile",
+          "Brewfile",
+          "Capfile",
+          "Dangerfile",
+          "Deliverfile",
+          "Fastfile",
+          "Guardfile",
+          "Podfile",
+          "Puppetfile",
+          "Rakefile",
+          "Rantfile",
+          "Schemafile",
+          "Snapfile",
+          "Thorfile",
+          "Vagrantfile",
+          "appfile",
+          "appraisals",
+          "arb",
+          "berksfile",
+          "brewfile",
+          "cap",
+          "capfile",
+          "cgi",
+          "cr",
+          "dangerfile",
+          "deliverfile",
+          "fastfile",
+          "fcgi",
+          "gemspec",
+          "guardfile",
+          "irbrc",
+          "opal",
+          "podfile",
+          "podspec",
+          "prawn",
+          "pryrc",
+          "puppetfile",
+          "rabl",
+          "rake",
+          "rakefile",
+          "rb",
+          "rbx",
+          "rjs",
+          "ru",
+          "ruby",
+          "snapfile",
+          "thor",
+          "thorfile",
+          "vagrantfile"
+        ],
+        "firstLine": "(?x)\n# Hashbang\n^\\#!.*(?:\\s|\\/)\n  (?:ruby|macruby|rake|jruby|rbx|ruby_executable_hooks)\n(?:$|\\s)\n|\n# Modeline\n(?i:\n  # Emacs\n  -\\*-(?:\\s*(?=[^:;\\s]+\\s*-\\*-)|(?:.*?[;\\s]|(?<=-\\*-))mode\\s*:\\s*)\n    ruby\n  (?=[\\s;]|(?<![-*])-\\*-).*?-\\*-\n  |\n  # Vim\n  (?:(?:\\s|^)vi(?:m[<=>]?\\d+|m)?|\\sex)(?=:(?=\\s*set?\\s[^\\n:]+:)|:(?!\\s*set?\\s))(?:(?:\\s|\\s*:\\s*)\\w*(?:\\s*=(?:[^\\n\\\\\\s]|\\\\.)*)?)*[\\s:](?:filetype|ft|syntax)\\s*=\n    ruby\n  (?=\\s|:|$)\n)",
+        "configuration": "./language-configuration-ruby.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "erb",
+        "scopeName": "text.html.erb",
+        "path": "./syntaxes/erb.tmLanguage.json",
+        "embeddedLanguages": {
+          "source.css": "css",
+          "source.js": "javascript",
+          "source.ruby": "ruby"
+        }
+      },
+      {
+        "language": "gemfile",
+        "scopeName": "source.ruby.gemfile",
+        "path": "./syntaxes/gemfile.tmLanguage.json"
+      },
+      {
+        "language": "ruby",
+        "scopeName": "source.ruby",
+        "path": "./syntaxes/ruby.tmLanguage.json"
+      }
+    ]
   }
 }
