@@ -3,6 +3,7 @@
   "displayName": "Ruby Syntax Highlighting",
   "description": "Adds Ruby, ERB and Gemfile Language Grammars.",
   "publisher": "SarahRidge",
+  "icon": "images/icon.png",
   "version": "0.0.1",
   "repository": {
     "type": "git",
