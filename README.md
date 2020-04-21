@@ -15,7 +15,7 @@ Original Ruby and ERB Syntax Grammar extracted from [vscode-ruby](https://github
 ** Pull Requests submitted to [forked repository](https://github.com/rubyide/vscode-ruby/pulls) for `ruby` and `erb` grammar changes addressed in this repo. **
 
 ## References
-[Download Extension](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
+Install via [Visual Studio Code Extensions](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
 
 [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 
@@ -24,3 +24,7 @@ Original Ruby and ERB Syntax Grammar extracted from [vscode-ruby](https://github
 ## Related Extension
 
 [Rails Syntax Highlighting](https://github.com/smridge/vscode_rails_syntax)
+
+<br>
+
+Ruby <img src="https://raw.githubusercontent.com/smridge/vscode-ruby-syntax/master/images/icon.png" width="12"> Logo &copy; 2006, Yukihiro Matsumoto: https://www.ruby-lang.org/en/about/logo/
