@@ -12,8 +12,6 @@
       "name": "keyword.other.special-method.bundler",
       "match": "(?<![+\\-*\\/=><&%!^\\.()|])\\b(group)\\b(?=\\s+:)"
     },
-    {
-      "include": "source.ruby"
-    }
+    { "include": "source.ruby" }
   ]
 }
