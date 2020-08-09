@@ -10,6 +10,11 @@ This Extension allows for Ruby Syntax Support without needing to install languag
 
 Original Ruby and ERB Syntax Grammar extracted from [vscode-ruby](https://github.com/rubyide/vscode-ruby).
 
+## Install
+- Run: `code --install-extension SarahRidge.vscode-ruby-syntax`
+  - Alternatively, extension can be installed via [marketplace](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax).
+- Reload VSCode.
+
 ### Changes Differing from extracted syntaxes:
 - Added Grammar for `Gemfile` following [bundler docs](https://bundler.io/man/gemfile.5.html).
 - Added [Ternary](https://docs.ruby-lang.org/en/2.7.0/syntax/control_expressions_rdoc.html#label-Ternary+if) `:`.
@@ -20,8 +25,6 @@ Original Ruby and ERB Syntax Grammar extracted from [vscode-ruby](https://github
 ** Pull Requests submitted to [forked repository](https://github.com/rubyide/vscode-ruby/pulls) for `ruby` and `erb` grammar changes addressed in this repo. **
 
 ## References
-Install via [Visual Studio Code Extensions](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
-
 [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 
 [Language Grammar Rules](https://macromates.com/manual/en/language_grammars)
