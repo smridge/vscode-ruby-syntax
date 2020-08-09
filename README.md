@@ -1,4 +1,9 @@
 # Ruby Syntax Highlighting for Visual Studio Code
+[![Published Version to VS Code](https://img.shields.io/visual-studio-marketplace/v/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
+[![VS Code Downloads](https://img.shields.io/visual-studio-marketplace/d/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
+[![VS Code Installs](https://img.shields.io/visual-studio-marketplace/i/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
+[![GitHub License](https://img.shields.io/github/license/smridge/vscode-ruby-syntax.svg)](https://github.com/smridge/vscode-ruby-syntax/blob/master/LICENSE)
+
 Ruby, ERB and Gemfile Syntax Support.
 
 This Extension allows for Ruby Syntax Support without needing to install language server, debugger etc.
