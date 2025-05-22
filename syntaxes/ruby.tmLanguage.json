@@ -405,7 +405,7 @@
       ]
     },
     {
-      "begin": "`",
+      "begin": "(?<!\\.)`",
       "beginCaptures": {
         "0": {
           "name": "punctuation.definition.string.begin.ruby"

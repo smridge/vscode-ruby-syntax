@@ -307,7 +307,7 @@ patterns:
     patterns:
       - include: '#interpolated_ruby'
       - include: '#escaped_char'
-  - begin: '`'
+  - begin: '(?<!\.)`'
     beginCaptures:
       '0':
         name: punctuation.definition.string.begin.ruby
