@@ -1,12 +1,11 @@
-# Change Log
+# CHANGELOG
+## master (Unreleased)
+-
 
-## [Unreleased]
-
-## [Released]
-### [0.0.11]
+## 0.0.11 (2020-04-19)
 - `README` Updates.
 
-### [0.0.1]
+## 0.0.1 (2020-04-19)
 - Capture Ruby and ERB Syntaxes from https://github.com/rubyide/vscode-ruby
 - Change ERB block comments to html style
 - Make a few adjustments for ruby grammar.
