@@ -1,0 +1,11 @@
+$schema: https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json
+name: Gemfile
+scopeName: source.ruby.gemfile
+comment: https://bundler.io/man/gemfile.5.html
+patterns:
+  - name: keyword.other.special-method.bundler
+    match: (?<![+\-*\/=><&%!^\.()|])\b(source|ruby|gem)\b(?=\s+["\'])
+  - name: keyword.other.special-method.bundler
+    match: (?<![+\-*\/=><&%!^\.()|])\b(group)\b(?=\s+:)
+  - include: source.ruby
+

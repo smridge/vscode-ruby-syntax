@@ -146,10 +146,12 @@
     ]
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.0.0"
+    "@vscode/vsce": "^3.0.0",
+    "js-yaml": "^4.1.0"
   },
   "scripts": {
     "vs-package": "./node_modules/@vscode/vsce/vsce package",
-    "vs-publish": "./node_modules/@vscode/vsce/vsce publish"
+    "vs-publish": "./node_modules/@vscode/vsce/vsce publish",
+    "build": "npx js-yaml syntaxes/yamls/erb.tmLanguage.yml > syntaxes/erb.tmLanguage.json && npx js-yaml syntaxes/yamls/gemfile.tmLanguage.yml > syntaxes/gemfile.tmLanguage.json && npx js-yaml syntaxes/yamls/ruby.tmLanguage.yml > syntaxes/ruby.tmLanguage.json"
   }
 }
