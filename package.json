@@ -144,5 +144,12 @@
         "path": "./syntaxes/ruby.tmLanguage.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.0.0"
+  },
+  "scripts": {
+    "vs-package": "./node_modules/@vscode/vsce/vsce package",
+    "vs-publish": "./node_modules/@vscode/vsce/vsce publish"
   }
 }
