@@ -2,7 +2,7 @@
 [![Published Version to VS Code](https://img.shields.io/visual-studio-marketplace/v/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
 [![VS Code Downloads](https://img.shields.io/visual-studio-marketplace/d/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
 [![VS Code Installs](https://img.shields.io/visual-studio-marketplace/i/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
-[![GitHub License](https://img.shields.io/github/license/smridge/vscode-ruby-syntax.svg)](https://github.com/smridge/vscode-ruby-syntax/blob/master/LICENSE)
+[![GitHub License](https://img.shields.io/github/license/smridge/vscode-ruby-syntax.svg)](https://github.com/smridge/vscode-ruby-syntax/blob/main/LICENSE)
 
 Ruby, ERB and Gemfile Syntax Support.
 
@@ -39,4 +39,4 @@ This Extension allows for Ruby Syntax Support without needing to install languag
 
 ---
 
-Ruby <img src="https://raw.githubusercontent.com/smridge/vscode-ruby-syntax/master/images/icon.png" width="12"> Logo &copy; 2006, Yukihiro Matsumoto: https://www.ruby-lang.org/en/about/logo/
+Ruby <img src="https://raw.githubusercontent.com/smridge/vscode-ruby-syntax/main/images/icon.png" width="12"> Logo &copy; 2006, Yukihiro Matsumoto: https://www.ruby-lang.org/en/about/logo/
