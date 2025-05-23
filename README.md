@@ -6,23 +6,24 @@
 
 Ruby, ERB and Gemfile Syntax Support.
 
-This Extension allows for Ruby Syntax Support without needing to install language server, debugger etc.
-
-Original Ruby and ERB Syntax Grammar forked from [vscode-ruby](https://github.com/rubyide/vscode-ruby).
+This Extension allows for Ruby Syntax Support without needing to install language server, debugger etc. for a way to keep things simple and distraction free.
 
 ## Install
 - Run: `code --install-extension SarahRidge.vscode-ruby-syntax`
   - Alternatively, extension can be installed via [marketplace](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
 - Reload VSCode
 
-### Changes differing from forked syntaxes:
-- Added Grammar for `Gemfile` following [bundler docs](https://bundler.io/man/gemfile.5.html)
-- Added [Ternary](https://docs.ruby-lang.org/en/2.7.0/syntax/control_expressions_rdoc.html#label-Ternary+if) `:`
-- Added [Ruby Range](https://ruby-doc.org/core-2.7.1/Range.html)
-- Fixed Comment Blocks for `.erb` files to allow for html block commenting `<!-- -->"` (still respects single line comments `<%# %>`)
-- Fixed variable recognition ending with `?` or `!`
+## Notes
+- The initial language grammar was copied from [`vscode-ruby`](https://github.com/rubyide/vscode-ruby) which is no longer supported
+- [`ruby-lsp`](https://github.com/Shopify/ruby-lsp) as the successor now maintains ruby grammars
 
-** Pull Requests submitted to [forked repository](https://github.com/rubyide/vscode-ruby/pulls) for `ruby` and `erb` grammar changes addressed in this repo. **
+### Diffs
+- Added Grammar for `Gemfile` following [bundler docs](https://bundler.io/man/gemfile.5.html)
+- Added Ternary `:`
+- Added Ruby Range `..`
+- Fixed variable recognition ending with `?` or `!`
+- Fixed Comment Blocks for `.erb` files by adding `<%#` to each line
+- Fixed multiline arithmetic operations and regex matching collisions
 
 ## References
 - [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
