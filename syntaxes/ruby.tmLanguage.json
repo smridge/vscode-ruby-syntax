@@ -429,7 +429,7 @@
       ]
     },
     {
-      "begin": "(?x)\n(?<![\\w)])((/))(?![?*+])\n(?=\n  (?:\\\\/|[^/])*+          # Do NOT change the order\n  /[eimnosux]*\\s*\n  (?:\n    [)\\]}#.,?:]|\\|\\||&&|<=>|=>|==|=~|!~|!=|;|$|\n    if|else|elsif|then|do|end|unless|while|until|or|and\n  )\n  |\n  $\n)",
+      "begin": "(?x)\n  (?:\n    ^                            # beginning of line\n    |\n      (?<=                       # or look-behind on:\n        [=>~(?:\\[,|&;]\n      | [\\s;]if\\s                # keywords\n      | [\\s;]elsif\\s\n      | [\\s;]while\\s\n      | [\\s;]unless\\s\n      | [\\s;]when\\s\n      | [\\s;]assert_match\\s\n      | [\\s;]or\\s               # boolean operators\n      | [\\s;]and\\s\n      | [\\s;]not\\s\n      | [\\s.]index\\s            # methods\n      | [\\s.]scan\\s\n      | [\\s.]sub\\s\n      | [\\s.]sub!\\s\n      | [\\s.]gsub\\s\n      | [\\s.]gsub!\\s\n      | [\\s.]match\\s\n      )\n    |\n      (?<=                      # or a look-behind with line anchor:\n        ^when\\s                 # duplication necessary due to limits of regex\n      | ^if\\s\n      | ^elsif\\s\n      | ^while\\s\n      | ^unless\\s\n      )\n  )\n  \\s*((\\/))(?![*+{}?])          # match a forward slash not followed by quantifiers",
       "captures": {
         "1": {
           "name": "string.regexp.interpolated.ruby"
