@@ -2126,7 +2126,7 @@
       "name": "keyword.operator.logical.ruby"
     },
     {
-      "match": "(?<=[^\\.\\s])\\.{2,3}(?=[^\\.\\s])",
+      "match": "(?<=[^\\.])\\.{2,3}|\\.{2,3}(?=[^\\.])",
       "name": "keyword.operator.range.ruby"
     },
     {

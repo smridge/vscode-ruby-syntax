@@ -20,7 +20,7 @@ This Extension allows for Ruby Syntax Support without needing to install languag
 ### Diffs
 - Added Grammar for `Gemfile` following [bundler docs](https://bundler.io/man/gemfile.5.html)
 - Added Ternary `:`
-- Added Ruby Range `..`
+- Added Ruby Ranges `..` / `...`
 - Fixed variable recognition ending with `?` or `!`
 - Fixed Comment Blocks for `.erb` files by adding `<%#` to each line
 - Fixed multiline arithmetic operations and regex matching collisions

@@ -1,5 +1,6 @@
 # CHANGELOG
 ## master (Unreleased)
+- Fix range operator to support beginless and endless ranges
 - Fix `erb` block comments to add `<%#` to each line
   ```erb
   <ul>
