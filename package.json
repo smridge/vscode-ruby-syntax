@@ -21,7 +21,7 @@
         "id": "erb",
         "aliases": ["erb", "Encapsulated Ruby"],
         "extensions": [".erb", ".rhtml", ".rhtm", "html.erb"],
-        "configuration": "./language-configuration-erb.json"
+        "configuration": "./language-configs/erb.json"
       },
       {
         "id": "gemfile",
@@ -33,7 +33,7 @@
         "filenames": [
           "Gemfile"
         ],
-        "configuration": "./language-configuration-ruby.json"
+        "configuration": "./language-configs/ruby.json"
       },
       {
         "id": "ruby",
