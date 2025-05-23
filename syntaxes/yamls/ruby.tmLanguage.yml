@@ -1256,7 +1256,7 @@ patterns:
   - match: <=>|<(?!<|=)|>(?!<|=|>)|<=|>=|===|==|=~|!=|!~|(?<=[ \t])\?
     name: keyword.operator.comparison.ruby
   - match: (?<=[\040\t]):(?=[\040\t])
-    name: keyword.operator.ternary-ifruby
+    name: keyword.operator.ternary.ruby
   - match: (?<!\.)\b(and|not|or)\b(?![?!])
     name: keyword.operator.logical.ruby
   - match: (?<=^|[ \t!])!|&&|\|\||\^
