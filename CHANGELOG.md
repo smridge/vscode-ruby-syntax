@@ -1,6 +1,13 @@
 # CHANGELOG
 ## master (Unreleased)
--
+- Fix `erb` block comments to add `<%#` to each line
+  ```erb
+  <ul>
+    <%# <% @foos.each do |foo| %>
+    <%#   <li><%= foo %></li>
+    <%# <% end %>
+  </ul>
+  ```
 
 ## 1.0.0 (2025-05-22)
 - Update repository with a few changes mainly from `ruby-lsp` and `textmate`:
