@@ -1,5 +1,8 @@
 # CHANGELOG
 ## main (Unreleased)
+-
+
+## 1.1.0 (2025-05-23)
 - Fix range operator to support beginless and endless ranges
 - Fix `erb` block comments to add `<%#` to each line
   ```erb
@@ -9,6 +12,14 @@
     <%# <% end %>
   </ul>
   ```
+  - **Note**: Somewhat `BREAKING` across text editors as there does not seem to be a universally agreed upon approach for `.erb` block comments. This approach is the closest to making it work as expected. For `html` only lines, such as `<%# <ul>`, an `erb` commenting out does not _actually_ comment the line and a manual `<!-- <ul> -->` is needed. In its entirety the correct approach should have a combination like the below. However, there seems to be a VSCode limitation in not being able to add a combination approach for line commenting. 
+    ```erb
+    <!-- <ul>
+      <%# <% @foos.each do |foo| %>
+      <%#   <li><%= foo %></li>
+      <%# <% end %>
+    </ul> -->
+    ```
 
 ## 1.0.0 (2025-05-22)
 - Update repository with a few changes mainly from `ruby-lsp` and `textmate`:
