@@ -307,7 +307,7 @@ patterns:
     patterns:
       - include: '#interpolated_ruby'
       - include: '#escaped_char'
-  - begin: '(?<!\.)`'
+  - begin: (?<!\.)`
     beginCaptures:
       '0':
         name: punctuation.definition.string.begin.ruby
@@ -1204,7 +1204,7 @@ patterns:
       - include: '#heredoc'
       - include: '#interpolated_ruby'
       - include: '#escaped_char'
-  - begin: (?<={|{\s|[^A-Za-z0-9_]do|^do|[^A-Za-z0-9_]do\s|^do\s)(\|)
+  - begin: (?<={|{\s+|[^A-Za-z0-9_:@$]do|^do|[^A-Za-z0-9_:@$]do\s+|^do\s+)(\|)
     name: meta.block.parameters.ruby
     captures:
       '1':
@@ -1214,7 +1214,7 @@ patterns:
       - begin: (?![\s,|(])
         end: (?=,|\|\s*)
         patterns:
-          - match: \G([&*]?)([a-zA-Z][\w_]*)|(_[\w_]*)
+          - match: \G((?:&|\*\*?)?)([a-zA-Z_][\w_]*)
             captures:
               '1':
                 name: storage.type.variable.ruby
