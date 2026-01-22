@@ -6,11 +6,19 @@
   "patterns": [
     {
       "name": "keyword.other.special-method.bundler",
-      "match": "(?<![+\\-*\\/=><&%!^\\.()|])\\b(source|ruby|gem)\\b(?=\\s+[\"\\'])"
+      "match": "(?<![+\\-*\\/=><&%!^\\.()|])\\b(source|gem|git|path)\\b(?=\\s+[\"\\'])"
     },
     {
       "name": "keyword.other.special-method.bundler",
-      "match": "(?<![+\\-*\\/=><&%!^\\.()|])\\b(group)\\b(?=\\s+:)"
+      "match": "(?<![+\\-*\\/=><&%!^\\.()|])\\b(group|platforms)\\b(?=\\s+:)"
+    },
+    {
+      "name": "keyword.other.special-method.bundler",
+      "match": "(?<![+\\-*\\/=><&%!^\\.()|])\\b(ruby)\\b(?=\\s+)"
+    },
+    {
+      "name": "support.function.bundler",
+      "match": "(?<![+\\-*\\/=><&%!^\\.()|])\\b(install_if)\\b(?=\\s+)"
     },
     {
       "include": "source.ruby"
