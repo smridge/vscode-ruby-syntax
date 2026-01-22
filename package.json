@@ -19,8 +19,16 @@
     "languages": [
       {
         "id": "erb",
-        "aliases": ["erb", "Encapsulated Ruby"],
-        "extensions": [".erb", ".rhtml", ".rhtm", "html.erb"],
+        "aliases": [
+          "erb",
+          "Encapsulated Ruby"
+        ],
+        "extensions": [
+          ".erb",
+          ".rhtml",
+          ".rhtm",
+          "html.erb"
+        ],
         "configuration": "./language-configs/erb.json"
       },
       {
@@ -37,7 +45,10 @@
       },
       {
         "id": "ruby",
-        "aliases": ["ruby", "Ruby"],
+        "aliases": [
+          "ruby",
+          "Ruby"
+        ],
         "extensions": [
           ".arb",
           ".builder",
@@ -152,6 +163,9 @@
   "scripts": {
     "vs-package": "./node_modules/@vscode/vsce/vsce package",
     "vs-publish": "./node_modules/@vscode/vsce/vsce publish",
-    "build": "npx js-yaml syntaxes/yamls/erb.tmLanguage.yml > syntaxes/erb.tmLanguage.json && npx js-yaml syntaxes/yamls/gemfile.tmLanguage.yml > syntaxes/gemfile.tmLanguage.json && npx js-yaml syntaxes/yamls/ruby.tmLanguage.yml > syntaxes/ruby.tmLanguage.json"
+    "build": "yarn run build:gemfile && yarn run build:erb && yarn run build:ruby",
+    "build:gemfile": "js-yaml syntaxes/yamls/gemfile.tmLanguage.yml > syntaxes/gemfile.tmLanguage.json",
+    "build:erb": "js-yaml syntaxes/yamls/erb.tmLanguage.yml > syntaxes/erb.tmLanguage.json",
+    "build:ruby": "js-yaml syntaxes/yamls/ruby.tmLanguage.yml > syntaxes/ruby.tmLanguage.json"
   }
 }
