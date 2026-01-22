@@ -9,9 +9,15 @@ Ruby, ERB and Gemfile Syntax Support.
 This Extension allows for Ruby Syntax Support without needing to install language server, debugger etc. for a way to keep things simple and distraction free.
 
 ## Install
-- Run: `code --install-extension SarahRidge.vscode-ruby-syntax`
-  - Alternatively, extension can be installed via [marketplace](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
-- Reload VSCode
+This extension is available at the following extension marketplaces:
+- [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
+- [Open VSX Registry](https://open-vsx.org/extension/SarahRidge/vscode-ruby-syntax)
+
+Run one of the following commands depending on the editor you are using:
+- For `vscode`: `code --install-extension SarahRidge.vscode-ruby-syntax`
+- For `cursor`: `cursor --install-extension SarahRidge.vscode-ruby-syntax`
+
+Reload your editor
 
 ## Notes
 - The initial language grammar was copied from [`vscode-ruby`](https://github.com/rubyide/vscode-ruby) which is no longer supported
@@ -35,7 +41,8 @@ This Extension allows for Ruby Syntax Support without needing to install languag
 ## Publish (internal)
 > Note: Publishing a new version of this theme is only meant for maintainers.
 - `yarn run vs-package`
-- `yarn run vs-publish`
+- Publish to VSCode Marketplace: `yarn run vs-publish`
+- Publish to Open VSX Registry: `npx ovsx publish <.vsix file> -p <OpenVSX PAT>`
 
 ---
 
