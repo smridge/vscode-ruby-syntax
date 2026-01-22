@@ -1,7 +1,9 @@
 # CHANGELOG
 ## main (Unreleased)
-- Add keywords (`path`, `platforms`, `git`) and support method `install_if` to `Gemfile`
+-
 
+## 1.2.0 (2025-01-22)
+- Add keywords (`path`, `platforms`, `git`) and support method `install_if` to `Gemfile` syntax
 
 ## 1.1.0 (2025-05-23)
 - Fix range operator to support beginless and endless ranges
