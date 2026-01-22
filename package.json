@@ -1,7 +1,8 @@
 {
   "name": "vscode-ruby-syntax",
   "displayName": "Ruby Syntax Highlighting",
-  "description": "Adds Ruby, ERB and Gemfile Language Grammars.",
+  "description": "Adds Ruby, ERB and Gemfile Language Grammars",
+  "license": "MIT",
   "publisher": "SarahRidge",
   "icon": "images/icon.png",
   "version": "1.1.0",

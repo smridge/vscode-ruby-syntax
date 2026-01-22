@@ -2,7 +2,7 @@
 [![Published Version to VS Code](https://img.shields.io/visual-studio-marketplace/v/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
 [![VS Code Downloads](https://img.shields.io/visual-studio-marketplace/d/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
 [![VS Code Installs](https://img.shields.io/visual-studio-marketplace/i/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
-[![GitHub License](https://img.shields.io/github/license/smridge/vscode-ruby-syntax.svg)](https://github.com/smridge/vscode-ruby-syntax/blob/main/LICENSE)
+[![GitHub License](https://img.shields.io/badge/license-MIT-gray?color=green)](https://github.com/smridge/vscode-ruby-syntax/blob/main/LICENSE)
 
 Ruby, ERB and Gemfile Syntax Support.
 
