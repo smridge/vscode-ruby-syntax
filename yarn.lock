@@ -2047,9 +2047,9 @@ underscore@^1.12.1:
   integrity sha512-GMXzWtsc57XAtguZgaQViUOzs0KTkk8ojr3/xAxXLITqf/3EMwxC0inyETfDFjH/Krbhuep0HNbbjI9i/q3F3g==
 
 undici@^7.12.0:
-  version "7.19.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-7.19.0.tgz#fd9a3c101c0b084bdcd0a7bbd4d7d7c20e9ea0bf"
-  integrity sha512-Heho1hJD81YChi+uS2RkSjcVO+EQLmLSyUlHyp7Y/wFbxQaGb4WXVKD073JytrjXJVkSZVzoE2MCSOKugFGtOQ==
+  version "7.24.2"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-7.24.2.tgz#017c31f68ff12ac49aa6116b4d7b3f38c0c0d7f3"
+  integrity sha512-P9J1HWYV/ajFr8uCqk5QixwiRKmB1wOamgS0e+o2Z4A44Ej2+thFVRLG/eA7qprx88XXhnV5Bl8LHXTURpzB3Q==
 
 unicorn-magic@^0.1.0:
   version "0.1.0"
