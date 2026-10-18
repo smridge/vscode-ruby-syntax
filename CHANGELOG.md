@@ -1,5 +1,7 @@
 # CHANGELOG
 ## `main` (Unreleased)
+
+## 1.3.0 (2026-10-18)
 - Added support for `cursor`
 
 ## 1.2.0 (2025-01-22)
