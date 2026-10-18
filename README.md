@@ -1,6 +1,4 @@
-# Ruby Syntax Highlighting for Visual Studio Code
-[![Published Version to VS Code](https://img.shields.io/vscode-marketplace/v/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
-[![VS Code Downloads](https://img.shields.io/vscode-marketplace/d/SarahRidge.vscode-ruby-syntax)](https://marketplace.visualstudio.com/items?itemName=SarahRidge.vscode-ruby-syntax)
+# Ruby Syntax Highlighting for `vscode` and `cursor`
 [![Open VSX Version](https://img.shields.io/open-vsx/v/sarahridge/vscode-ruby-syntax)](https://open-vsx.org/extension/SarahRidge/vscode-ruby-syntax)
 [![Open VSX Downloads](https://img.shields.io/open-vsx/dt/sarahridge/vscode-ruby-syntax)](https://open-vsx.org/extension/SarahRidge/vscode-ruby-syntax)
 [![GitHub License](https://img.shields.io/badge/license-MIT-gray?color=green)](https://github.com/smridge/vscode-ruby-syntax/blob/main/LICENSE)

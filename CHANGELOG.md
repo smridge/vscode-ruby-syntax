@@ -1,6 +1,6 @@
 # CHANGELOG
-## main (Unreleased)
--
+## `main` (Unreleased)
+- Added support for `cursor`
 
 ## 1.2.0 (2025-01-22)
 - Add keywords (`path`, `platforms`, `git`) and support method `install_if` to `Gemfile` syntax
